@@ -1,0 +1,17 @@
+
+name: Gold Signal Pro APK Builder
+
+'on':
+  workflow_dispatch:
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check website file
+        run: |
+          test -f Gold_Signal_Pro.html
+          echo "Gold Signal Pro HTML file found"
