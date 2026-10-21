@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.bak
+gold_alert_state.json
+demo_check.js
+gold_check.js
